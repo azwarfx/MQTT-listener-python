@@ -50,7 +50,7 @@ def insert_data(unique_key, guard_id, shift_id,cluster_id, latitude, longitude, 
         # print('Connecting to the PostgreSQL database...')
 
         # create a cursor
-           cur = myConnection.cursor()
+        cur = myConnection.cursor()
         # create a new cursor
         # execute the INSERT statement
         cur.execute(sql, (unique_key, guard_id, shift_id, datetime.datetime.today(),cluster_id, longitude, latitude, acc))
